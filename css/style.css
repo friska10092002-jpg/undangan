@@ -1,0 +1,169 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#000;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+.hidden{display:none}
+
+/* COVER */
+.cover{
+  position:fixed;
+  inset:0;
+  background:url('../assets/cover.jpg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:99;
+}
+.cover::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.65);
+}
+.cover-content{
+  position:relative;
+  text-align:center;
+  z-index:2;
+}
+
+/* BACKGROUND */
+.bg{
+  background:url('../assets/bg.jpg') center/cover fixed;
+  min-height:100vh;
+  position:relative;
+}
+.bg::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.6);
+}
+
+/* FLOWER */
+.flower{
+  position:fixed;
+  top:-10%;
+  font-size:22px;
+  animation:fall linear infinite;
+  opacity:.8;
+  z-index:1;
+}
+@keyframes fall{
+  to{transform:translateY(120vh) rotate(360deg)}
+}
+
+/* CONTAINER */
+.container{
+  position:relative;
+  z-index:2;
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
+  text-align:center;
+}
+
+/* ANIMASI */
+.fade{opacity:0;animation:fadeUp 1.2s forwards}
+.delay1{animation-delay:.3s}
+.delay2{animation-delay:.6s}
+.delay3{animation-delay:.9s}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* TEXT */
+.title{
+  font-family:'Playfair Display',serif;
+  font-size:42px;
+}
+.subtitle{letter-spacing:3px;font-size:14px;margin-bottom:15px}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(8px);
+  border-radius:20px;
+  padding:30px;
+  margin:30px 0;
+}
+
+/* BUTTON */
+.btn{
+  padding:14px 28px;
+  border-radius:50px;
+  background:linear-gradient(135deg,#d4af37,#f1e3a1);
+  color:#000;
+  border:none;
+  cursor:pointer;
+  font-weight:500;
+}
+
+/* GALERI */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+}
+.gallery img{
+  width:100%;
+  border-radius:15px;
+}
+
+/* MAP */
+iframe{
+  width:100%;
+  height:300px;
+  border-radius:20px;
+  border:0;
+}
+
+/* MUSIC */
+.music-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#fff;
+  color:#000;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  z-index:9;
+}
+
+/* UCAPAN */
+.ucapan-box{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  align-items:center;
+}
+
+.ucapan-box p{
+  max-width:500px;
+  line-height:1.6;
+}
+
+/* BUTTON WHATSAPP */
+.whatsapp{
+  background:linear-gradient(135deg,#25D366,#1ebe5d);
+  color:#fff;
+}
+
+/* MAP BUTTON OUTLINE */
+.btn-outline{
+  background:transparent;
+  border:2px solid #d4af37;
+  color:#d4af37;
+}
+
+footer{margin:40px 0;font-size:13px;opacity:.7}
