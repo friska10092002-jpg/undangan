@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Undangan Pernikahan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- COVER / OPENING -->
+<div id="cover" class="cover">
+  <div class="cover-content">
+    <p class="subtitle">UNDANGAN PERNIKAHAN</p>
+    <h1 class="title">Anas Dan Dia</h1>
+    <p>Kepada Yth.</p>
+    <h3 id="tamu">Friska Saputra R</h3>
+    <button class="btn" onclick="openInvitation()">Buka Undangan</button>
+  </div>
+</div>
+
+<!-- MUSIC -->
+<audio id="music" loop>
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- TOMBOL MUSIK (SETELAH MASUK) -->
+<div id="musicBtn" class="music-btn" onclick="toggleMusic()">♫</div>
+
+<!-- ISI UNDANGAN -->
+<div id="invitation" class="bg hidden">
+  <div class="container">
+
+    <section class="fade">
+      <p class="subtitle">UNDANGAN PERNIKAHAN</p>
+      <h1 class="title">Anas Dan Dia</h1>
+    </section>
+
+    <section class="card fade delay1">
+      <h3>💍 Akad & Resepsi</h3>
+      <p>
+        Minggu, 12 Januari 2026<br>
+        Pukul 10.00 WIB<br>
+        Taman Gligi (G4 Park) – Dsn. Gligi
+      </p>
+    </section>
+
+    <section class="card fade delay2">
+      <h3>📖 Cerita Kami</h3>
+      <p>
+        Kami dipertemukan oleh takdir dalam pertemuan sederhana.
+        Dari saling mengenal, tumbuh rasa percaya,
+        hingga akhirnya kami memutuskan
+        mengikat janji suci pernikahan.
+      </p>
+    </section>
+
+    <section class="card fade delay3">
+      <h3>📸 Galeri</h3>
+      <div class="gallery">
+        <img src="assets/galeri1.jpg">
+        <img src="assets/galeri2.jpg">
+        <img src="assets/galeri3.jpg">
+      </div>
+    </section>
+
+   <section class="card fade delay1">
+  <h3>📍 Lokasi Acara</h3>
+  <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sid!4v1766387656086!5m2!1sen!2sid!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRDZfWjdkVWc.!2m2!1d-7.741968101592428!2d111.6764674991254!3f292.75293!4f0!5f0.7820865974627469" 
+  width="600" 
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+
+  </iframe>
+
+  <br><br>
+  <a class="btn btn-outline"
+     href="https://maps.google.com/?q=G4+Park,+Ds.+Gligi"
+     target="_blank">
+     Buka di Google Maps
+  </a>
+
+<section class="card fade delay2">
+  <h3>💌 Kirim Ucapan</h3>
+
+  </section>
+
+ <div class="ucapan-box">
+    <p>
+      Sampaikan doa dan ucapan terbaik Anda
+      untuk kedua mempelai melalui WhatsApp
+    </p>
+
+    <a class="btn whatsapp"
+       href="https://wa.me/6281234567890?text=Assalamualaikum%20selamat%20atas%20pernikahannya"
+       target="_blank">
+       💬 Kirim Ucapan WhatsApp
+    </a>
+  </div>
+</section>
+
+
+
+    <section class="card fade delay3">
+      <h3>💖 Tanda Kasih</h3>
+      <p>
+        BCA : 1234567890 a.n Aisyah<br>
+        DANA : 081234567890
+      </p>
+    </section>
+
+    <footer>Terima kasih atas doa & restu 🤍</footer>
+
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
